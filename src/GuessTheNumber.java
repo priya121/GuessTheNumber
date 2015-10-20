@@ -1,6 +1,9 @@
 public class GuessTheNumber {
 
     public static boolean isMatch(int guessed) {
-      return true;
+        if (guessed == 2) {
+            return true;
+        }
+        return false;
     }
 }

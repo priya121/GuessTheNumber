@@ -9,6 +9,10 @@ public class GuessTheNumberTest {
        assertEquals(true, GuessTheNumber.isMatch(2));
     }
 
+    @Test
+    public void checksNumberDoesNotMatch() {
+        assertEquals(false, GuessTheNumber.isMatch(4));
+    }
 
 }
 
