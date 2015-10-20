@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-public class FakeIO implements IOInterface {
+public class FakeIO implements IO {
    private LinkedList<Integer> numbers;
 
     public FakeIO(List<Integer> guessedNumbers) {
@@ -12,8 +12,5 @@ public class FakeIO implements IOInterface {
     public int getInput() {
         return numbers.pop();
     }
-
-
-
 }
 

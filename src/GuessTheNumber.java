@@ -1,22 +1,29 @@
 public class GuessTheNumber {
+    private int tries;
     private final int number;
     private boolean isOver = false;
+    private IO io;
+    private int input;
 
-    public GuessTheNumber(IOInterface io, int number) {
+    public GuessTheNumber(IO io, int number) {
         this.number = number;
+        this.io = io;
+        this.tries = 1;
     }
 
     public boolean isMatch(int guessed) {
-        if (guessed == number) {
-            return true;
+        if (guessed == number || tries == 6) {
+            return isOver = true;
         }
-        return false;
+        return isOver;
     }
 
-    public boolean gameLoop(int guessedNumber) {
-            if (isMatch(guessedNumber)) {
-              isOver = true;
-            }
+    public boolean gameLoop() {
+        do {
+            input = io.getInput();
+            tries += 1;
+        }
+        while (!isMatch(input));
         return isOver;
     }
 }
