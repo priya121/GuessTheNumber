@@ -9,10 +9,8 @@ public class FakeIO implements IOInterface {
     }
 
     @Override
-    public int getInput() {
+    public Integer getInput() {
         return numbers.pop();
     }
-
-
 }
 
