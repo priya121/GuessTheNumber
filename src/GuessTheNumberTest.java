@@ -6,7 +6,9 @@ public class GuessTheNumberTest {
 
     @Test
     public void checksIfNumberMatches() {
-       assertEquals(GuessTheNumber.isMatch(2));
+       assertEquals(true, GuessTheNumber.isMatch(2));
     }
+
+
 }
 
