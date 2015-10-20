@@ -9,7 +9,7 @@ public class FakeIO implements IO {
     }
 
     @Override
-    public Integer getInput() {
+    public int getInput() {
         return numbers.pop();
     }
 }

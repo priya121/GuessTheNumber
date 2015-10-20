@@ -11,7 +11,7 @@ public class ConsoleIO implements IO {
     }
 
     @Override
-    public Integer getInput() {
+    public int getInput() {
         try {
              return Integer.parseInt(inputChannel.readLine());
         } catch (IOException e) {

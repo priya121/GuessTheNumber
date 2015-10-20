@@ -11,6 +11,6 @@ public class ConsoleIOTest {
     public void takesAnInput() {
         InputStream input = new ByteArrayInputStream("2\n".getBytes());
         ConsoleIO newInput = new ConsoleIO(input);
-        assertEquals(2, Integer.parseInt(String.valueOf(newInput.getInput())));
+        assertEquals(2, (newInput.getInput()));
     }
 }
