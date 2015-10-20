@@ -1,3 +1,3 @@
-public interface IOInterface {
+public interface IO {
     public Integer getInput();
 }

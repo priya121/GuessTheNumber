@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class ConsoleIO implements IOInterface {
+public class ConsoleIO implements IO {
     private final BufferedReader inputChannel;
 
     public ConsoleIO (InputStream inputChannel){

@@ -2,10 +2,10 @@ public class GuessTheNumber {
     private int tries;
     private final int number;
     private boolean isOver = false;
-    private IOInterface io;
+    private IO io;
     private int input;
 
-    public GuessTheNumber(IOInterface io, int number) {
+    public GuessTheNumber(IO io, int number) {
         this.number = number;
         this.io = io;
         this.tries = 1;
