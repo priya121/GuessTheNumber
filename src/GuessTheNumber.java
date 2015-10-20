@@ -1,7 +1,8 @@
 public class GuessTheNumber {
     private final int number;
+    private boolean isOver = false;
 
-    public GuessTheNumber(int number) {
+    public GuessTheNumber(IOInterface io, int number) {
         this.number = number;
     }
 
@@ -10,5 +11,12 @@ public class GuessTheNumber {
             return true;
         }
         return false;
+    }
+
+    public boolean gameLoop(int guessedNumber) {
+            if (isMatch(guessedNumber)) {
+              isOver = true;
+            }
+        return isOver;
     }
 }
