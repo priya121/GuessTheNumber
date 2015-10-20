@@ -5,13 +5,8 @@ import static org.junit.Assert.assertEquals;
 public class GuessTheNumberTest {
 
     @Test
-    public void returnsFalseIfGuessedNumberDoesNotMatch() {
-        assertEquals(false, GuessTheNumber.isMatch(1));
+    public void checksIfNumberMatches() {
+       assertEquals(GuessTheNumber.isMatch(2));
     }
-
-    @Test
-    public void returnsTrueIfGuessedNumberMatches() {
-        assertEquals(true, GuessTheNumber.isMatch(2));
-    }
-
 }
+
