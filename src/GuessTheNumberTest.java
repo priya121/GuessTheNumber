@@ -1,17 +1,18 @@
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class GuessTheNumberTest {
+    GuessTheNumber newGame = new GuessTheNumber(2);
 
     @Test
     public void checksIfNumberMatches() {
-       assertEquals(true, GuessTheNumber.isMatch(2));
+        assertTrue(newGame.isMatch(2));
     }
 
     @Test
     public void checksNumberDoesNotMatch() {
-        assertEquals(false, GuessTheNumber.isMatch(4));
+        assertFalse(newGame.isMatch(4));
     }
 
 }
